@@ -1,25 +1,23 @@
 # mamba-insatll-env-instead-of-conda
 mamba can intsall conda env fast than conda 
 
-**using mamba to install Karmaforge**
+**using mamba to install conda env**
 
 
 
-Adding mamba to resolve your conda environment (https://anaconda.org/conda-forge/mamba) if you can write there (not possible on /c7/shared )
+Adding mamba to resolve your conda environment (https://anaconda.org/conda-forge/mamba) if you can write there 
 conda install -c conda-forge mamba
 
-I have forked KarmaDock to avoid using the hard coded Chinese mirror...
-
-https://github.com/truatpasteurdotfr/KarmaDock
+to avoid using the hard coded (far-away) mirror...
 
 then just 
 
-mamba env create -n KarmaDock -f karmadock_env.yaml
+mamba env create -n KarmaDock -f package_env.yaml
 
 Or use the explicit files
-mamba create -n KarmaDock -f 20231108-1603-KarmaDock-conda-list--explicit.yml
+mamba create -n env_name -f packge-conda-list--explicit.yml
 or
-mamba env create -n KarmaDock -f 20231108-1603-KarmaDock-conda-env-export.yml
+mamba env create -n env_name -f package-conda-env-export.yml
 
 
 
